@@ -1,3 +1,11 @@
+编译的步骤：
+1. git clone git@github.com:AndiHappy/zookeeper.git
+2. java的版本号，最好不要变化，遇到过：使用java15，java18编译不通过的情况
+3. 编译器，javac导致rt.jar需要额外的配置，最好使用选择eclipse
+4. Maven home: apache-maven-3.8.1  Java version: 1.8.0_202
+5. 执行： mvn clean package -Dmaven.test.skip=true
+
+---------------------------------------------------------------------------------------------------------
 # Apache ZooKeeper
 ![alt text](https://zookeeper.apache.org/images/zookeeper_small.gif "ZooKeeper")
 
